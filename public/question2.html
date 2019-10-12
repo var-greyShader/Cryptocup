@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoCup</title>
+    <link rel="stylesheet" href="/styling/reset.css" />
+    <link rel="stylesheet" href="/styling/questionPage.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Question 2</h1>
+      <div id="usefulButtons">
+        <form
+          id="upload"
+          action="/fileupload"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <input type="file" name="files" accept="files/*" />
+          <input type="submit" />
+        </form>
+        <button
+          class="goHome"
+          onclick="window.location.href = '/homepageQuestions.html';"
+        >
+          Home
+        </button>
+      </div>
+    </div>
+    <div id="Question">
+      <div id="text">
+        
+      </div>
+    </div>
+  </body>
+</html>
