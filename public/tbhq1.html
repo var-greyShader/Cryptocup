@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoCup</title>
+    <link rel="stylesheet" href="/styling/reset.css" />
+    <link rel="stylesheet" href="/styling/questionPage.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Question 1</h1>
+      <div id="usefulButtons">
+        <form
+          id="upload"
+          action="/fileupload"
+          enctype="multipart/form-data"
+          method="post"
+        >
+          <input type="file" name="files" accept="files/*" />
+          <input id="validate" type="submit" />
+        </form>
+        <button
+          class="goHome"
+          onclick="window.location.href = '/homepageQuestions.html';"
+        >
+          Home
+        </button>
+      </div>
+    </div>
+    <div id="Question">
+      <div id="text">
+        <p>
+          The Indian army is in the midst of an international nuclear high
+          alert. The Indian government has dissolved, but continues to operate
+          underground. There is dire need of safeguarding nuclear codes lest
+          they should get stolen by the enemy. We need to devise a new way to
+          communicate the nuclear codes between the army and the government. The
+          following steps are taken:
+        </p>
+        <br />
+        <ol start="1">
+          <li>
+            The codes (plaintext) is encrypted using a key. The key is put in a
+            square matrix (size=5) followed by
+            {,'a','b','c','d','e','f','g','h','i',[[[NOT
+            'j']]],'k','l','m',..............'x','y','z'} such that there is no
+            repetition of alphabets in the matrix.
+          </li>
+          <br />
+          <li>
+            The plaintext is written in terms of the index positions of the
+            letters in the matrix. Another key, the cipher key is also written
+            in terms of the index positions of the letters in the matrix and
+            repeated to reach the length of the plain text.
+          </li>
+          <br />
+          <li>
+            The ciphertext is formed by adding the plaintext pattern and key
+            pattern.
+          </li>
+          <br />
+        </ol>
+        <pre>
+      
+            <b>EXAMPLE</b>
+            <br>
+            <b>Plain Text (PT)-</b>
+            escapefromhere
+            
+            <b>Key -</b>
+            alphabet
+            
+            <b>Cipher Key -</b>
+            crook
+            
+            
+            
+            <b>Key to Box Legend -</b>
+              0 1 2 3 4
+            0 a l p h b
+            1 e t c d f
+            2 g i k m n
+            3 o q r s u
+            4 v w x y z
+            
+            <b>Cipher Key Pattern -</b>
+            c  r  o  o  k
+            12 32 30 30 22
+            
+            <b>Cipher Text -</b>
+            PT:    e   s   c   a   p   e   f   r   o   m   h   e   r   e
+                  10  33  12  00  02  10  14  32  30  23  03  10  32  10
+            Key:  12  32  30  30  22  12  32  30  30  22  12  32  30  30
+            CT:   22  65  42  30  24  22  46  62  60  45  15  42  62  40
+            </pre>
+      </div>
+    </div>
+  </body>
+</html>

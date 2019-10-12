@@ -1,0 +1,82 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: wheat;
+  font-size: 17px;
+  background-image: url("/resources/oscar-soderlund-Cs8ZKuw4VWw-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: #263238;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 2.5vh;
+}
+
+#header > h1 {
+  margin-left: 4vw;
+  font-size: 6vh;
+  padding-top: 1vh;
+}
+
+#Question {
+  margin: 3vh auto;
+  max-width: 95vw;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  max-height: 85vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  opacity: 0.95;
+}
+
+#text {
+  margin: 2vw 1vw;
+}
+
+b {
+  font-weight: 800;
+}
+
+ol {
+  font-size: 2.5vh;
+  list-style: lower-alpha;
+  list-style-position: inside;
+}
+
+#usefulButtons {
+  display: flex;
+}
+
+.goHome {
+  position: absolute;
+  right: 3px;
+  background-color: #018786;
+  border: 0;
+  padding: 1vh 2vw;
+  margin: 2vh 4vw;
+  color: aliceblue;
+}
+
+input {
+  border: 0;
+  left: 30vw;
+  margin: 2vh;
+  padding: 1vh 0.5vw;
+  position: relative;
+  text-align: center;
+  background-color: #b8bbbb;
+}

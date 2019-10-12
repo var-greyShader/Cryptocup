@@ -1,0 +1,62 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: rgb(77, 131, 131);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  height: 7vh;
+  border: #000000;
+  border-width: 12px;
+  width: 20vw;
+  margin: 0;
+  padding-top: 0;
+  text-indent: 1vw;
+  animation: 2s ease-out 0s 1 alternate;
+}
+
+#loginForm {
+  position: relative;
+  text-align: center;
+  top: 10vh;
+  margin: 0 auto;
+  background-color: #4444448a;
+  width: fit-content;
+  padding: 5vh;
+  border-radius: 15px;
+}
+
+#loginForm > h1 {
+  font-size: 10vh;
+  color: aliceblue;
+  margin-bottom: 1vh;
+}
+
+#loginForm > p {
+  font-size: 4vh;
+  color: aliceblue;
+}
+
+#loginButton {
+  font-size: 2.5vh;
+  font-weight: bolder;
+  background-color: #000000;
+  color: aliceblue;
+}
+
+#loginButton:hover {
+  background-color: aliceblue;
+  color: #000000;
+  transition-duration: 1s;
+}

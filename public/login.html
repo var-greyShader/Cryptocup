@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CryptoCup</title>
+    <link rel="stylesheet/css" href="/styling/reset.css" />
+    <link rel="stylesheet" href="/styling/stylingHome.css" />
+    <script src="homeScript.js"></script>
+  </head>
+  <body>
+    <div id="loginForm">
+      <h1>CryptoCup</h1>
+      <p>Round 2</p>
+
+      <form id="secureLogin" action="/secureLogin" method="POST">
+        <input
+          type="text"
+          name="teamname"
+          placeholder="Team Name"
+          id="userAuth"
+        />
+        <br />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="passAuth"
+          value=""
+        />
+        <br /><br />
+        <input type="submit" id="loginButton" value="Start" />
+      </form>
+    </div>
+  </body>
+</html>

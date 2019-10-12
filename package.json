@@ -1,0 +1,20 @@
+{
+  "name": "cryptocup",
+  "version": "1.1.0",
+  "description": "Round 2 of cryptocup",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm server",
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "formidable": "^1.2.1",
+    "jsonfile": "^5.0.0",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.19.3"
+  },
+  "author": "Yash Aryan",
+  "license": "MIT",
+  "devDependencies": {}
+}
